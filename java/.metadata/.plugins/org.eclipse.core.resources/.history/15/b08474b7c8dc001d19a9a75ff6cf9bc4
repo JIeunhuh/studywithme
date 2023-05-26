@@ -1,0 +1,27 @@
+package Chapter10;
+
+class Employee {
+String name ;
+int age;
+int height;
+int weight;
+char bloodtype;
+String email;
+public Employee(String name, int age, int height, int weight, char bloodtype, String email) {
+	this.name=name;
+	this.age=age;
+	this.height=height;
+	this.weight=weight;
+	this.bloodtype=bloodtype;
+	this.email=email;
+}
+}
+
+public class Test1{
+	public static void main(String[] args) {
+		int[] a=new int[10];
+		Employee[] eset=new Employee[10];
+		eset[0]=new Employee("Hong", 11,130,50,'A',"bhong@co.kr");
+	}
+	
+}
