@@ -17,17 +17,24 @@ public class 카드2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt();
-		Queue<Integer> que = new LinkedList<>();
-		while(que.size()<=N){
-			que.add();
 
-			if(que.peek() == N) {
-				que.poll();	
-			}
-			if(que.size()==1) {
-				int last = que.poll();
-				System.out.println(last);
-			}
+		Queue<Integer> que = new LinkedList<>();
+
+		for (int i = 1; i <= N; i++) {
+			que.add(i);
 		}
+		while (que.size()>1) {
+//			if(que.isEmpty())
+//				break;
+			que.poll();
+			int peek = que.peek();
+			que.poll();
+			que.add(peek);
+//			if (que.size() == 1)
+//				break;
+		}
+		System.out.println(que.peek());
+		sc.close();
 	}
+
 }
