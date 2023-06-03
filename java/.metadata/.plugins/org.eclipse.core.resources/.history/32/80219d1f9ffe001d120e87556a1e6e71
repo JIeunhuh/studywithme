@@ -1,0 +1,25 @@
+package java_baekjoon;
+
+import java.util.Scanner;
+
+public class 피보나치수5_10870 {
+	static int addNum(int n) {
+		if (n <= 20) {
+			for (int i = 0; i < n; i++) {
+				i += (i - 1) + (i - 2);
+			}
+		}
+		return n;
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int[] numArr = new int[n];
+
+		for (int i = 0; i < n; i++) {
+			numArr[i] = addNum(n);
+			System.out.println(numArr[-1]);
+		}
+	}
+}
