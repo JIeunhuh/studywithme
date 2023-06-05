@@ -44,6 +44,6 @@ public class 너의평점은_25206 {
 			}
 		}
 		double total = tot / totalG; // 전공평점 계산
-		System.out.printf("%.6f", total);
+		System.out.printf("전공평점 : %.6f", total);
 	}
 }
