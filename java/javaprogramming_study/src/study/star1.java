@@ -1,4 +1,4 @@
-package java;
+package study;
 
 public class star1 { //별표 줄바꿔서 공백 하나씩 증가시키기 -> 직각삼각형 출력하기 -> 정삼각형 출력 -> 반대로 
 	public static void main(String[] args) {

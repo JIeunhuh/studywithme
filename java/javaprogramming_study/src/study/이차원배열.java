@@ -1,4 +1,5 @@
-package java;
+package study;
+
 
 //배열의 덧셈
 public class 이차원배열 {
