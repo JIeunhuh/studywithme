@@ -1,4 +1,4 @@
-package java;
+package study;
 
 import java.util.Random;
 
@@ -39,9 +39,9 @@ public class 타입별행렬만들기 {
 	private static <T> void showMatrix(T[][] arr) {
 		Random rd = new Random();
 		for (int i = 0; i < arr.length; i++) {
-			for (int j = 0; j < arr[0].length; j++) {//instanceof : 객체가 어떤 클래스의 인스턴스인지를 확인하기 위해 사용되는 연산자
+			for (int j = 0; j < arr[0].length; j++) {// instanceof : 객체가 어떤 클래스의 인스턴스인지를 확인하기 위해 사용되는 연산자
 				if (arr[i][j] instanceof Integer) {
-					arr[i][j] = (T) Integer.valueOf(rd.nextInt(30)); //int형 Integer class 객체로 바꾸기 -> (T) 타입으로 바꾸기
+					arr[i][j] = (T) Integer.valueOf(rd.nextInt(30)); // int형 Integer class 객체로 바꾸기 -> (T) 타입으로 바꾸기
 					System.out.print(arr[i][j] + "\t");
 				} else if (arr[i][j] instanceof Double) {
 					arr[i][j] = (T) Double.valueOf(rd.nextDouble(30));
@@ -74,15 +74,13 @@ public class 타입별행렬만들기 {
 		showLongMatrix(longarr);
 		System.out.println("\ngeneric 이용해서 만든 showMatrix():");
 		System.out.println("=".repeat(40));
-		
+
 		타입별행렬만들기 num = new 타입별행렬만들기();
 		num.<Integer>getNumber(intarr[0][2]);
 
-		
 		타입별행렬만들기.<Integer>showMatrix(intarr); // <T>.method(객체명); & 제너릭 함수 만들어서 어떤타입이든 넣을 수 있음
 		타입별행렬만들기.<Double>showMatrix(doublearr);
 		타입별행렬만들기.<Long>showMatrix(longarr);
-		
 
 	}
 }

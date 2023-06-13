@@ -1,4 +1,4 @@
-package java;
+package study;
 
 //선택정렬 알고리즘
 public class array2 {
@@ -13,7 +13,7 @@ public class array2 {
 
 				if (min > a[compare]) { // min값이 a[compare]보다 크면 min값에 a[compare]를 정의
 					min = a[compare];
-					minIndex=compare;
+					minIndex = compare;
 				}
 
 				if (a[cursor] > min) { // a[cursor]값이 min 값보다 크면 min값과 배열정렬 위치?를 바꿈
