@@ -14,7 +14,7 @@ public class 타입별행렬만들기 {
 		}
 	}
 
-	static void showDoubleMatrix(Double arr[][]) {
+	static void showDoubleMatrix(double arr[][]) {
 		Random rd = new Random();
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < arr[0].length; j++) {
