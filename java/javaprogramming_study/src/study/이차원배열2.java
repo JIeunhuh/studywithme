@@ -1,4 +1,4 @@
-package java;
+package study;
 
 public class 이차원배열2 {
 	public static void main(String[] args) {

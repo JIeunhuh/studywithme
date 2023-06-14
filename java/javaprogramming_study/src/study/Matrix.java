@@ -1,4 +1,4 @@
-package java;
+package study;
 
 public class Matrix {
 

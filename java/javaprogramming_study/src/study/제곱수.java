@@ -1,4 +1,4 @@
-package java;
+package study;
 
 //2~1000까지의 숫자 중 2의 제곱수를 모두 더한 결과 출력하기
 public class 제곱수 {

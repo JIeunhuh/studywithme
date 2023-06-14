@@ -1,4 +1,4 @@
-package java;
+package study;
 
 //선택정렬 알고리즘
 public class array2 {

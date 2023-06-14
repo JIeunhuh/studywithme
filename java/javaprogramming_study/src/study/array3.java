@@ -1,4 +1,4 @@
-package java;
+package study;
 
 //2차원 배열
 public class array3 {
