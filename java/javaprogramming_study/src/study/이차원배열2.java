@@ -26,7 +26,8 @@ public class 이차원배열2 {
 			System.out.println();
 		}
 	}
-	//행렬의 합 구하는 함수 만들기
+
+	// 행렬의 합 구하는 함수 만들기
 	static int[][] sumMatrix(int[][] m1, int[][] m2) {
 		int res[][] = new int[3][3];
 
