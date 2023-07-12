@@ -1,5 +1,8 @@
 package programmers.Level3;
 
+import java.util.ArrayList;
+import java.util.List;
+
 class Solution {
     // 1 <= N =< 9
     public int solution(int N, int number) {
