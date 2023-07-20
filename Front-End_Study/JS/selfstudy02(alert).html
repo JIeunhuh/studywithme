@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./Alert_box.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Study 02 - script tag(내부 스크립트) alert 만들기</title>
+</head>
+
+<body>
+    <!-- JS의 목적 :  HTML의 조작과 변경 -->
+    <!-- ALERT (알람) 만들기 -->
+    <!-- 숨겨진 .alert-box을 button onclick에서 바로 js 적용해서 나오게 만들기 -->
+   <div class="alert-box" id="alert">Alert Box</div> <!-- css에서 display none으로 설정해둠 버튼 누르면 다시 보이게 만들기-->
+   <button onclick="document.getElementById('alert').style.display = 'block';">버튼1</button>
+  <button onclick="document.addEventListener(alert('안녕하시와요'))">버튼</button>
+    <script>
+        
+    </script>
+</body>
+</html>

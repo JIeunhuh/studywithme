@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Study 01 - script tag(내부 스크립트)</title>
+</head>
+<body>
+    <!-- JS의 목적 :  HTML의 조작과 변경 -->
+
+    <h2 id="hello">안녕하세요</h2>
+    <h2 id="ice">올 때 바밤바</h2>
+    <script>
+        // 웹문서의 html 요소를 가져옴(id를 가져옴) = 'hello'-> html 내부요소를 바꿈 '안녕' 으로 !! 
+        // selector라고 함
+        document.getElementById('hello').style.fontSize = '30px';
+        document.getElementById('ice').innerHTML='하이루';
+    </script>
+</body>
+</html>
